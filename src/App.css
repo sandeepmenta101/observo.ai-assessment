@@ -13,7 +13,8 @@ p{
 }
 
 .folder{
-  margin: 8px 0 0;
+  padding: 8px 0 0;
+  cursor: pointer;
 }
 
 .folder span{
@@ -36,7 +37,4 @@ ul {
 
 ul li{
   padding: 5px 0 5px 10px;
-}
-.file{
-  cursor: pointer;
 }

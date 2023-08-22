@@ -1,14 +1,14 @@
-export default function FileOrFolder({ file, toggleFolder }) {
-  const { name, isActive, isDir } = file;
-  const folderIcon = isActive ? (
+export default function FileOrFolder({ file, toggleFolder, expand }) {
+  const { name, isDir } = file;
+  const folderIcon = expand ? (
     <i className="fa-regular fa-folder-open" />
   ) : (
     <i className="fa-regular fa-folder" />
   );
   return (
-    <div className="file" onClick={() => toggleFolder(file)}>
+    <div className="folder">
       {isDir ? (
-        <button>{folderIcon}</button>
+        <button onClick={toggleFolder}>{folderIcon}</button>
       ) : (
         <i className="fa-solid fa-file"></i>
       )}
