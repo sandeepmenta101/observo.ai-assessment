@@ -1,0 +1,42 @@
+.App {
+  background-color: #282c34;
+  color: #fff;
+  min-height: 100vh;
+}
+
+p{
+  margin: 0;
+}
+
+.file-explorer{
+  padding: 10px 0 0 10px;
+}
+
+.folder{
+  margin: 8px 0 0;
+}
+
+.folder span{
+  padding: 8px;
+}
+
+button{
+  cursor: pointer;
+  background: none;
+  outline: none;
+  color: #fff;
+  border: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0 10px;
+}
+
+ul li{
+  padding: 5px 0 5px 10px;
+}
+.file{
+  cursor: pointer;
+}
