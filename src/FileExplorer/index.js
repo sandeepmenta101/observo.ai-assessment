@@ -77,7 +77,7 @@ export default function FileExplorer() {
                         {subFolder.children &&
                           subFolder.children.length > 0 &&
                           subFolder.children.map((folder) => (
-                            <li>
+                            <li key={folder.id}>
                               <FileOrFolder
                                 file={folder}
                                 toggleFolder={toggleFolder}
